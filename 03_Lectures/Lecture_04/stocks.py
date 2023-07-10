@@ -25,13 +25,3 @@ fig.add_trace(
 )
 fig.show()
 # %%
-import datetime
-
-start = datetime.datetime(2019, 7, 7)
-# %%
-masked = btc[btc["Date"] >= start]
-# %%
-invested = 100
-# %%
-masked["invest_btc"] = invested/masked.Open
-# %%

@@ -137,3 +137,11 @@ x_test = pd.get_dummies(test[features])
 
 predictions = model.predict(x_test)
 # %%
+
+data.groupby("Sex").sum()
+data.groupby("Sex").count()
+# %%
+
+for i, row in data.groupby("Pclass"):
+    row
+# %%

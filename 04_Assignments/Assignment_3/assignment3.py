@@ -27,7 +27,7 @@ print(r.perimeter())
 
 def count_words(string):
     string_dict = {} 
-    for i in string.split():
+    for i in string.split(): # for i in k
         if i in string_dict.keys():
             string_dict[i] += 1 
         else: 
@@ -35,4 +35,6 @@ def count_words(string):
     return string_dict
 
 string = "Hello world hello python"
-print(count_words(string.split()))
+print(count_words(string))
+
+# %%
