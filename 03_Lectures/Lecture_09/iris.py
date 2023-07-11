@@ -3,6 +3,13 @@ import pandas as pd
 
 data = pd.read_csv("Iris.csv")
 # %%
+example = data[["Id", "Species"]]
+examples = data.loc[data["Species"] == "Iris-setosa"]
+examples = data.loc[data["SepalLengthCm"] >= 6]
+examples = data.iloc[:10]
+#%%
+example = data.drop(["Species"], axis=1)
+#%%
 import plotly.graph_objects as go
 
 data["Species_num"] = pd.factorize(data["Species"])[0]
